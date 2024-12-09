@@ -1,12 +1,11 @@
-/* General styles for the services section */
-#services {
+/* General styles for the packages section */
+#packages {
     background-color: #f4f4f4;
     padding: 50px 0;
     text-align: center;
-    font-family: Arial, sans-serif;
 }
 
-#services h2 {
+#packages h2 {
     font-size: 2.5em;
     color: #333;
     margin-bottom: 30px;
@@ -72,3 +71,4 @@
         width: 100%;
     }
 }
+
