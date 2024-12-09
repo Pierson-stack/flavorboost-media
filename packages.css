@@ -1,0 +1,36 @@
+/* styles for the packages section */
+#packages {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.package {
+    border: 2px solid #ddd;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.package h3 {
+    font-size: 1.8em;
+    color: #ff6600;
+}
+
+.package p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.package p.price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
