@@ -1,36 +1,74 @@
-/* styles for the packages section */
-#packages {
-    background-color: #f9f9f9;
-    padding: 40px 0;
-}
-
-.package {
-    border: 2px solid #ddd;
-    padding: 20px;
-    margin: 15px;
-    border-radius: 10px;
-    background-color: #fff;
+/* General styles for the services section */
+#services {
+    background-color: #f4f4f4;
+    padding: 50px 0;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: Arial, sans-serif;
 }
 
-.package:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+#services h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
 }
 
+/* Flex container for aligning the package sections */
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 0 10%;
+}
+
+/* Individual package styles */
+.package {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 22%;
+    padding: 30px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+/* Package titles (Heading) */
 .package h3 {
     font-size: 1.8em;
     color: #ff6600;
+    margin-bottom: 20px;
 }
 
+/* Package pricing */
+.package .price {
+    font-size: 2em;
+    font-weight: bold;
+    color: #00b300;
+    margin-bottom: 20px;
+}
+
+/* Package description */
 .package p {
     font-size: 1.2em;
-    margin-top: 10px;
+    color: #555;
+    line-height: 1.6;
 }
 
-.package p.price {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #333;
+/* Hover effect for each package */
+.package:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .package {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .package {
+        width: 100%;
+    }
 }
