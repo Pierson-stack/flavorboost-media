@@ -1,74 +1,61 @@
-/* General styles for the packages section */
+/* General styling for packages section */
 #packages {
-    background-color: #f4f4f4;
-    padding: 50px 0;
     text-align: center;
+    padding: 50px 0;
+    background-color: #f4f4f4;
 }
 
 #packages h2 {
     font-size: 2.5em;
     color: #333;
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* Space between the heading and packages */
 }
 
-/* Flex container for aligning the package sections */
-.service-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 30px;
-    padding: 0 10%;
-}
-
-/* Individual package styles */
+/* Flexbox for arranging packages side by side */
 .package {
-    background-color: white;
+    display: inline-block;
+    margin: 0 15px;
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 22%;
-    padding: 30px;
-    transition: all 0.3s ease-in-out;
-    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Package titles (Heading) */
 .package h3 {
     font-size: 1.8em;
-    color: #ff6600;
+    color: #ff6600; /* Package title color */
     margin-bottom: 20px;
 }
 
-/* Package pricing */
 .package .price {
     font-size: 2em;
+    color: #333;
     font-weight: bold;
-    color: #00b300;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-/* Package description */
 .package p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #555;
-    line-height: 1.6;
 }
 
-/* Hover effect for each package */
 .package:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px); /* Hover effect to make the package rise */
 }
 
-/* Responsive styles for smaller screens */
+/* Responsive design: Stack packages on smaller screens */
 @media (max-width: 768px) {
     .package {
-        width: 45%;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    #packages h2 {
+        font-size: 2em;
     }
 }
 
-@media (max-width: 480px) {
-    .package {
-        width: 100%;
-    }
-}
 
