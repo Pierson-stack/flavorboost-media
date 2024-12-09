@@ -4,107 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Restaurant Marketing Agency</title>
-    <style>
-        /* General styles for the services section */
-        #services {
-            background-color: #f4f4f4;
-            padding: 50px 0;
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
-
-        #services h2 {
-            font-size: 2.5em;
-            color: #333;
-            margin-bottom: 30px;
-        }
-
-        .service-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 30px;
-            padding: 0 10%;
-        }
-
-        .service-box {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            width: 22%;
-            padding: 30px;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .service-box h3 {
-            font-size: 1.8em;
-            color: #ff6600;
-            margin-bottom: 20px;
-        }
-
-        .service-box p {
-            font-size: 1.2em;
-            color: #555;
-            line-height: 1.6;
-        }
-
-        .service-box:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        @media (max-width: 768px) {
-            .service-box {
-                width: 45%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .service-box {
-                width: 100%;
-            }
-        }
-    </style>
+    <!-- Linking the main CSS file -->
+    <link rel="stylesheet" href="styles.css"> <!-- Main Stylesheet -->
+    <!-- Linking the package-specific CSS file -->
+    <link rel="stylesheet" href="packages.css"> <!-- Package-specific Stylesheet -->
 </head>
 <body>
     <header>
         <h1>Welcome to Your Restaurant's Growth Partner</h1>
         <p>Boost your restaurant's digital presence with our marketing services</p>
+        <!-- Add the Logo Image -->
+        <img src="https://raw.githubusercontent.com/Pierson-stack/flavorboost-media/refs/heads/main/DALL%C2%B7E%202024-12-08%2014.24.38%20-%20A%20sleek%20and%20modern%20logo%20for%20a%20Social%20Media%20Marketing%20Agency%20for%20restaurants%2C%20featuring%20food-related%20imagery%20such%20as%20a%20fork%2C%20spoon%2C%20or%20plate%2C%20with%20clea.webp" alt="Agency Logo" style="width: 300px; height: auto;" />
     </header>
-
+    
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#packages">Packages</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
+    
     <section id="about">
         <h2>About Us</h2>
         <p>We specialize in marketing strategies for the restaurant industry.</p>
     </section>
 
-    <!-- Services Section -->
     <section id="services">
         <h2>Our Services</h2>
-        <div class="service-container">
-            <div class="service-box">
-                <h3>Social Media Management</h3>
-                <p>We provide end-to-end social media management, from content creation to audience engagement, ensuring your brand grows online.</p>
-            </div>
-            <div class="service-box">
-                <h3>Paid Social Ads</h3>
-                <p>Maximize your reach with targeted paid ads that bring in more customers and boost sales.</p>
-            </div>
-            <div class="service-box">
-                <h3>Food Photography & Videography</h3>
-                <p>Capture your restaurant's essence with stunning food photography and videos to boost your marketing campaigns.</p>
-            </div>
-            <div class="service-box">
-                <h3>Reputation Management</h3>
-                <p>We help maintain a positive online reputation through reviews and customer feedback management.</p>
-            </div>
+        <ul>
+            <li>Social Media Management</li>
+            <li>Paid Social Ads</li>
+            <li>Food Photography & Videography</li>
+            <li>Reputation Management</li>
+        </ul>
+    </section>
+
+    <section id="packages">
+        <h2>Our Packages</h2>
+        <div class="package">
+            <h3>Starter Package</h3>
+            <p class="price">£300</p>
+            <p>Includes basic social media management and one ad campaign per month.</p>
+        </div>
+        <div class="package">
+            <h3>Growth Package</h3>
+            <p class="price">£500</p>
+            <p>Includes advanced social media strategies, two ad campaigns, and analytics reporting.</p>
+        </div>
+        <div class="package">
+            <h3>Premium Package</h3>
+            <p class="price">£700</p>
+            <p>Includes complete social media management, unlimited ad campaigns, food photography & videography, and detailed monthly analytics.</p>
         </div>
     </section>
 
@@ -113,6 +65,8 @@
         <p>Phone: +447445056664</p>
         <p>Email: piersondacosta176@gmail.com</p>
     </section>
+
 </body>
 </html>
+
 
